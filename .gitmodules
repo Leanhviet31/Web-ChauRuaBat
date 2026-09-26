@@ -1,0 +1,21 @@
+[submodule "BaiViet"]
+	path = BaiViet
+	url = https://github.com/Leanhviet31/BaiViet.git
+[submodule "CamNang"]
+	path = CamNang
+	url = https://github.com/Leanhviet31/CamNang.git
+[submodule "ChauRuaBat"]
+	path = ChauRuaBat
+	url = https://github.com/Leanhviet31/ChauRuaBat.git
+[submodule "ChiTietSanPham"]
+	path = ChiTietSanPham
+	url = https://github.com/Leanhviet31/ChiTietSanPham.git
+[submodule "CRB"]
+	path = CRB
+	url = https://github.com/Leanhviet31/CRB.git
+[submodule "Lienhe"]
+	path = Lienhe
+	url = https://github.com/Leanhviet31/Lienhe.git
+[submodule "Giao-Dien"]
+	path = Giao-Dien
+	url = https://github.com/Leanhviet31/Giao-Dien.git
