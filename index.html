@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRB - Chậu rửa bát</title>
-    <link rel="stylesheet" href="Giao Dien Trang Chu/style.css">
+    <!-- Đã đổi Giao Dien Trang Chu thành Giao Dien -->
+    <link rel="stylesheet" href="Giao-Dien/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -15,7 +16,7 @@
         <div class="container flex-between align-center">
             <div class="logo">
                 <a href="index.html">
-                    <img src="Giao Dien Trang Chu/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
+                    <img src="Giao-Dien/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
                         alt="CRB Logo" class="img-logo">
                 </a>
             </div>
@@ -24,9 +25,10 @@
 
             <nav class="nav-menu" id="nav-menu">
                 <a href="index.html">Chọn chậu <span style="font-size: 11px; margin-left: 3px;">&#709;</span></a>
-                <a href="index.html">Chậu rửa bát</a>
-                <a href="index.html">Thay chậu cũ</a>
-                <a href="index.html">Cẩm nang</a>
+                <!-- Đã cập nhật link -->
+                <a href="ChauRuaBat/index.html">Chậu rửa bát</a>
+                <a href="Lienhe/index.html">Thay chậu cũ</a>
+                <a href="CamNang/index.html">Cẩm nang</a>
                 <a href="CRB/index.html">Showroom</a>
             </nav>
 
@@ -40,7 +42,8 @@
                     </div>
                 </div>
 
-                <button id="btn-tim-chau" class="btn btn-primary">TÌM CHẬU PHÙ HỢP ➔</button>
+                <button onclick="window.location.href='ChauRuaBat/index.html'" id="btn-tim-chau"
+                    class="btn btn-primary">TÌM CHẬU PHÙ HỢP ➔</button>
             </div>
         </div>
     </header>
@@ -49,23 +52,25 @@
     <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
     <div class="mobile-drawer" id="mobile-drawer">
         <div class="drawer-header flex-between align-center">
-            <img src="Giao Dien Trang Chu/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
+            <img src="Giao Dien/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
                 alt="CRB Logo" style="max-height: 35px;">
             <div class="close-drawer" id="close-drawer">✖</div>
         </div>
         <div class="drawer-body">
             <a href="index.html">Chọn chậu <span
                     style="font-size: 11px; float:right; margin-top: 5px;">&#709;</span></a>
-            <a href="index.html">Chậu rửa bát</a>
-            <a href="index.html">Thay chậu cũ</a>
-            <a href="index.html">Cẩm nang</a>
+            <!-- Đã cập nhật link -->
+            <a href="ChauRuaBat/index.html">Chậu rửa bát</a>
+            <a href="Lienhe/index.html">Thay chậu cũ</a>
+            <a href="CamNang/index.html">Cẩm nang</a>
             <a href="CRB/index.html">Showroom</a>
         </div>
         <div class="drawer-footer">
             <div class="hotline-drawer">
                 <i class="fa-solid fa-phone" style="transform: scaleX(-1);"></i> 0961234567
             </div>
-            <button id="btn-tim-chau-drawer" class="btn btn-primary"
+            <button onclick="window.location.href='ChauRuaBat/index.html'" id="btn-tim-chau-drawer"
+                class="btn btn-primary"
                 style="width: 100%; text-align: center; justify-content: center; margin-top: 15px; font-weight: bold; font-size: 14px;">TÌM
                 CHẬU PHÙ HỢP ➔</button>
         </div>
@@ -73,9 +78,7 @@
 
     <!-- Hero Section -->
     <section id="hero-section" class="hero banner-bg">
-        <!-- Lớp phủ mờ để chữ hiển thị rõ trên nền ảnh -->
         <div class="hero-overlay"></div>
-
         <div class="container flex-row" style="position: relative; z-index: 2; align-items: stretch;">
             <div class="hero-content">
                 <h1>Tìm chậu rửa bát<br>phù hợp với bếp<br>của bạn</h1>
@@ -84,7 +87,8 @@
 
                 <div class="hero-buttons flex-row">
                     <button id="btn-bat-dau" class="btn btn-primary">BẮT ĐẦU CHỌN CHẬU ➔</button>
-                    <button id="btn-thay-chau" class="btn btn-outline bg-white">THAY CHẬU CŨ</button>
+                    <button onclick="window.location.href='Lienhe/index.html'" id="btn-thay-chau"
+                        class="btn btn-outline bg-white">THAY CHẬU CŨ</button>
                 </div>
 
                 <div class="hero-features">
@@ -123,26 +127,19 @@
             <div class="hero-form">
                 <div class="form-card complex-form">
                     <div class="form-main">
-                        <div class="form-header flex-between">
+                        <div class="form-header flex-between"></div>
 
-                        </div>
-
-                        <!-- Header của Form AI -->
                         <div class="form-header" style="display: block; margin-bottom: 20px;">
                             <div class="title-row"
                                 style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
-
-                                <!-- Ép kích thước trực tiếp vào thẻ img -->
-                                <img src="Giao Dien Trang Chu/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
+                                <img src="Giao Dien/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
                                     alt="CRB Logo"
                                     style="height: 50px; width: auto; margin: 0; display: block; object-fit: contain; transform: translateY(2px);">
-
                                 <h3
                                     style="margin: 0; font-size: 22px; line-height: 1; display: flex; align-items: center; gap: 8px;">
                                     FitMatch <span class="badge"
                                         style="background: #00796b; color: #fff; padding: 2px 8px; border-radius: 12px; font-size: 12px;">AI</span>
                                 </h3>
-
                             </div>
                             <span class="sub-text" style="margin: 0;">Chọn chậu phù hợp chỉ trong vài bước</span>
                         </div>
@@ -160,7 +157,6 @@
                                 transition: all 0.2s ease;
                             }
 
-                            /* Kết hợp cả 2 phương pháp đổi màu để đảm bảo hoạt động */
                             .radio-pill:has(input:checked),
                             .radio-pill.active {
                                 border-color: #f26522 !important;
@@ -179,12 +175,10 @@
                                 color: #333 !important;
                             }
                         </style>
-                        <!-- Nội dung Form -->
                         <form id="ai-form">
                             <div class="form-group">
                                 <label><span class="step-num">1</span> Tình trạng bếp của bạn</label>
                                 <div class="radio-group flex-row">
-                                    <!-- Thêm class radio-pill để tạo viền bo tròn -->
                                     <label class="radio-pill"><input type="radio" name="status" checked> <span
                                             class="radio-text">Bếp mới</span></label>
                                     <label class="radio-pill"><input type="radio" name="status"> <span
@@ -206,7 +200,6 @@
                             <div class="form-group">
                                 <label><span class="step-num">4</span> Ưu tiên của bạn</label>
                                 <div class="radio-group flex-row">
-                                    <!-- Thêm class radio-pill -->
                                     <label class="radio-pill"><input type="radio" name="priority" checked> <span
                                             class="radio-text">Bền bỉ</span></label>
                                     <label class="radio-pill"><input type="radio" name="priority"> <span
@@ -220,7 +213,6 @@
                                         bắt buộc)</span></label>
                                 <div class="upload-box flex-center" id="upload-box">
                                     <input type="file" id="file-upload" accept="image/*" style="display: none;">
-                                    <!-- Dùng icon FontAwesome thay cho mũi tên text -->
                                     <span id="upload-text">
                                         <i class="fa-solid fa-arrow-up-from-bracket"
                                             style="font-size: 22px; margin-bottom: 8px; color: #333;"></i><br>
@@ -267,7 +259,8 @@
                 <h2>Chọn theo nhu cầu</h2>
                 <p>Chọn loại chậu phù hợp với không gian bếp của bạn</p>
             </div>
-            <a href="index.html" class="link">Xem tất cả danh mục ➔</a>
+            <!-- Đã thêm link -->
+            <a href="ChauRuaBat/index.html" class="link">Xem tất cả danh mục ➔</a>
         </div>
 
         <div class="row">
@@ -314,17 +307,20 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="category-card">
-                    <img src="pngtree-green-and-environmentally-friendly-garbage-can-be-recycled-image_1199983-removebg-preview.png"
-                        alt="Thay chậu cũ">
-                    <div class="flex-between align-center">
-                        <div>
-                            <h4>Thay chậu cũ</h4>
-                            <p>Vừa vặn, dễ dàng</p>
+                <!-- Đã thêm link -->
+                <a href="Lienhe/index.html" style="text-decoration: none; color: inherit;">
+                    <div class="category-card">
+                        <img src="pngtree-green-and-environmentally-friendly-garbage-can-be-recycled-image_1199983-removebg-preview.png"
+                            alt="Thay chậu cũ">
+                        <div class="flex-between align-center">
+                            <div>
+                                <h4>Thay chậu cũ</h4>
+                                <p>Vừa vặn, dễ dàng</p>
+                            </div>
+                            <span class="arrow-icon">➔</span>
                         </div>
-                        <span class="arrow-icon">➔</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -336,7 +332,8 @@
                 <h2>3 mẫu phù hợp nhất cho bạn</h2>
                 <p>Được gợi ý bởi CRB FitMatch dựa trên nhu cầu của bạn</p>
             </div>
-            <a href="index.html" class="link">Xem tất cả sản phẩm ➔</a>
+            <!-- Đã thêm link -->
+            <a href="ChauRuaBat/index.html" class="link">Xem tất cả sản phẩm ➔</a>
         </div>
 
         <div class="row">
@@ -427,16 +424,13 @@
     <section class="replacement-banner">
         <div class="container">
             <div class="row align-center">
-
-                <!-- Cột chữ bên trái -->
                 <div class="col-4 banner-text">
                     <h2>Muốn thay chậu cũ nhưng sợ không vừa lỗ đá?</h2>
                     <p>Chỉ cần chụp ảnh, nhập kích thước (nếu có). CRB sẽ giúp bạn kiểm tra và gợi ý mẫu chậu phù hợp
                         nhanh chóng.</p>
-                    <button id="btn-thu-ngay" class="btn btn-primary mt-2">THỬ NGAY VỚI ẢNH BẾP CỦA BẠN ➔</button>
+                    <button onclick="window.location.href='Lienhe/index.html'" id="btn-thu-ngay"
+                        class="btn btn-primary mt-2">THỬ NGAY VỚI ẢNH BẾP CỦA BẠN ➔</button>
                 </div>
-
-                <!-- Cột Cards bên phải -->
                 <div class="col-8 banner-steps-container">
                     <div class="row banner-steps">
                         <!-- Bước 1 -->
@@ -493,10 +487,10 @@
     <section class="trusted-brands container section-padding">
         <div class="brands-header flex-between align-center">
             <h3 class="brands-title">Thương hiệu uy tín. Được tin dùng tại Việt Nam.</h3>
-            <a href="index.html" class="link">Xem tất cả thương hiệu ➔</a>
+            <!-- Đã thêm link -->
+            <a href="ChauRuaBat/index.html" class="link">Xem tất cả thương hiệu ➔</a>
         </div>
         <div class="brands-list flex-between align-center">
-            <!-- Dùng text mô phỏng logo để hiển thị đẹp ngay lập tức, bạn có thể thay bằng thẻ <img> nếu có file ảnh thật -->
             <div class="brand-logo" style="color: #555; font-weight: 800; font-size: 22px; letter-spacing: 1px;">H<span
                     style="color: #e3000f;">Ä</span>FELE</div>
             <div class="brand-logo" style="color: #f39c12; font-weight: 700; font-size: 20px; letter-spacing: 1px;"><i
@@ -521,7 +515,9 @@
                 <p>Đội ngũ chuyên gia luôn sẵn sàng tư vấn cho bạn.</p>
             </div>
             <div class="cta-action flex-row align-center">
-                <button class="btn btn-primary btn-lg">NHẬN TƯ VẤN NGAY ➔</button>
+                <!-- Đã thêm sự kiện chuyển hướng trang liên hệ -->
+                <button onclick="window.location.href='Lienhe/index.html'" class="btn btn-primary btn-lg">NHẬN TƯ VẤN
+                    NGAY ➔</button>
                 <div class="hotline-white flex-row align-center">
                     <i class="fa-solid fa-phone phone-icon"></i>
                     <div class="hotline-info">
@@ -539,51 +535,52 @@
         <div class="row">
             <div class="col-4 footer-col">
                 <a href="index.html">
-                    <img src="Giao Dien Trang Chu/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
+                    <img src="Giao Dien/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
                         alt="CRB Logo" class="img-logo-footer">
                 </a>
                 <p class="mt-2">Giải pháp chậu rửa bát toàn diện cho mọi căn bếp Việt.</p>
                 <p class="mt-2">© 2023 CRB. All rights reserved.</p>
             </div>
+            <!-- Đã cập nhật tất cả link footer bên dưới -->
             <div class="col-2 footer-col">
                 <h4 class="footer-toggle">Sản phẩm <i class="fa-solid fa-chevron-down"></i></h4>
                 <ul>
-                    <li><a href="index.html">Chậu rửa bát</a></li>
-                    <li><a href="index.html">Phụ kiện</a></li>
-                    <li><a href="index.html">Bộ xả - vòi rửa</a></li>
-                    <li><a href="index.html">Tất cả sản phẩm</a></li>
+                    <li><a href="ChauRuaBat/index.html">Chậu rửa bát</a></li>
+                    <li><a href="ChauRuaBat/index.html">Phụ kiện</a></li>
+                    <li><a href="ChauRuaBat/index.html">Bộ xả - vòi rửa</a></li>
+                    <li><a href="ChauRuaBat/index.html">Tất cả sản phẩm</a></li>
                 </ul>
             </div>
             <div class="col-2 footer-col">
                 <h4 class="footer-toggle">Hỗ trợ <i class="fa-solid fa-chevron-down"></i></h4>
                 <ul>
-                    <li><a href="index.html">Thay chậu cũ</a></li>
-                    <li><a href="index.html">Hướng dẫn chọn chậu</a></li>
-                    <li><a href="index.html">Chính sách bảo hành</a></li>
-                    <li><a href="index.html">Chính sách giao hàng</a></li>
+                    <li><a href="Lienhe/index.html">Thay chậu cũ</a></li>
+                    <li><a href="CamNang/index.html">Hướng dẫn chọn chậu</a></li>
+                    <li><a href="CRB/index.html">Chính sách bảo hành</a></li>
+                    <li><a href="CRB/index.html">Chính sách giao hàng</a></li>
                 </ul>
             </div>
             <div class="col-2 footer-col">
                 <h4 class="footer-toggle">Về CRB <i class="fa-solid fa-chevron-down"></i></h4>
                 <ul>
-                    <li><a href="index.html">Giới thiệu</a></li>
+                    <li><a href="CRB/index.html">Giới thiệu</a></li>
                     <li><a href="CRB/index.html">Showroom</a></li>
-                    <li><a href="index.html">Tin tức</a></li>
-                    <li><a href="index.html">Liên hệ</a></li>
+                    <li><a href="BaiViet/index.html">Tin tức</a></li>
+                    <li><a href="Lienhe/index.html">Liên hệ</a></li>
                 </ul>
             </div>
             <div class="col-2 footer-col">
                 <h4>Kết nối với chúng tôi</h4>
                 <div class="socials">
-                    <a href="index.html" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="index.html" class="social-icon youtube-icon"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="index.html" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="index.html" class="social-icon zalo-icon">Zalo</a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon youtube-icon"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="social-icon zalo-icon">Zalo</a>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="Giao Dien Trang Chu/script.js"></script>
+    <script src="Giao-Dien/script.js"></script>
 </body>
 
 </html>
