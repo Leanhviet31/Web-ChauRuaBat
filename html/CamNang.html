@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cẩm nang chọn chậu - CRB Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/CamNang.css">
+</head>
+
+<body>
+
+  <!-- HEADER (sticky) -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="../Web.html" class="logo">
+        <img src="../images/logo.png" alt="CRB" class="logo-img">
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="ChauRuaBat.html">Chọn chậu</a></li>
+          <li><a href="ChauRuaBat.html">Chậu rửa bát</a></li>
+          <li><a href="Lienhe.html">Thay chậu cũ</a></li>
+          <li><a href="ChauRuaBat.html">Thương hiệu</a></li>
+          <li><a href="CamNang.html" class="active">Cẩm nang</a></li>
+          <li><a href="GioiThieu.html">Showroom</a></li>
+          <li><a href="Lienhe.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="search-toggle"><i class="fas fa-search"></i></button>
+        <a href="#" class="btn-cta">Tìm chậu phù hợp</a>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <div class="mobile-nav">
+      <div class="mobile-nav-header">
+        <img src="../images/logo.png" alt="CRB" style="height:36px;">
+        <button class="mobile-close" id="mobile-close"><i class="fas fa-xmark"></i></button>
+      </div>
+      <ul>
+        <li><a href="#">Chọn chậu</a></li>
+        <li><a href="#">Chậu rửa bát</a></li>
+        <li><a href="#">Thay chậu cũ</a></li>
+        <li><a href="#">Thương hiệu</a></li>
+        <li><a href="#" class="active">Cẩm nang</a></li>
+        <li><a href="#">Showroom</a></li>
+      </ul>
+      <a href="#" class="btn-cta-mobile">Tìm chậu phù hợp</a>
+    </div>
+  </div>
+
+  <!-- HERO BANNER -->
+  <section class="hero-banner">
+    <div class="hero-overlay">
+      <div class="container">
+        <span class="hero-label">CRB BLOG</span>
+        <h1 class="hero-title">Cẩm nang chọn chậu</h1>
+        <p class="hero-sub">Kiến thức thực tế để chọn đúng chậu cho bếp của bạn.</p>
+        <div class="hero-search">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Bạn muốn tìm hiểu gì?">
+          <button type="button"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY TABS -->
+  <section class="category-section">
+    <div class="container">
+      <div class="category-tabs" id="category-tabs">
+        <button class="cat-tab active" data-cat="all">Tất cả</button>
+        <button class="cat-tab" data-cat="chon-chau">Chọn chậu</button>
+        <button class="cat-tab" data-cat="kich-thuoc">Kích thước</button>
+        <button class="cat-tab" data-cat="thay-chau">Thay chậu cũ</button>
+        <button class="cat-tab" data-cat="lap-dat">Lắp đặt</button>
+        <button class="cat-tab" data-cat="vat-lieu">Vật liệu</button>
+        <button class="cat-tab" data-cat="so-sanh">So sánh</button>
+        <button class="cat-tab" data-cat="ve-sinh">Vệ sinh &amp; bảo quản</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="container main-content layout-grid">
+    <div class="articles-column">
+      <h2 class="section-title">Bài viết mới nhất</h2>
+
+      <div class="featured-grid">
+
+        <!-- Featured post 1 (lớn) -->
+        <article class="featured-post featured-large">
+          <div class="post-img-wrap">
+            <img src="../images/80cm.png" alt="Tủ 80cm chọn chậu" style="object-fit: cover;" >
+            <span class="img-badge">80 cm</span>
+          </div>
+          <div class="post-info">
+            <span class="post-cat">CHỌN CHẬU</span>
+            <h3 class="post-title"><a href="BaiViet.html" class="stretched-link" style="color: inherit; text-decoration: none;">Tủ 80cm nên chọn chậu rửa bát nào?</a></h3>
+            <p class="post-excerpt">Gợi ý các mẫu chậu phù hợp với tủ 80cm, kích thước, kết hợp và lưu ý lắp đặt.</p>
+            <span class="post-date"><i class="fas fa-calendar-alt"></i> 12 Tháng 9, 2025</span>
+          </div>
+          </article>
+
+        <!-- Featured post 2 (vừa) -->
+        <article class="featured-post featured-medium">
+          <div class="post-img-wrap">
+            <img src="../images/chaucu.png" alt="Cách đo chậu cũ" style="object-fit: cover;" >
+          </div>
+          <div class="post-info">
+            <span class="post-cat">THAY CHẬU CŨ</span>
+            <h3 class="post-title"><a href="BaiViet.html" class="stretched-link" style="color: inherit; text-decoration: none;">Cách đo chậu cũ để mua chậu mới chính xác trong 5 phút</a></h3>
+            <p class="post-excerpt">Hướng dẫn đo kích thước chậu và lỗ khoét đá đơn giản, dễ làm theo tại nhà.</p>
+            <span class="post-date"><i class="fas fa-calendar-alt"></i> 10 Tháng 9, 2025</span>
+          </div>
+          </article>
+
+      </div><!-- end featured-grid -->
+
+      <!-- ARTICLE ROWS -->
+      <div class="article-rows">
+
+        <!-- Row 1: 2 bài -->
+        <article class="article-card">
+          <div class="post-img-wrap">
+            <img src="../images/Inox+vs+Granite.png" alt="So sánh Inox vs Granite" style="object-fit: cover;" >
+          </div>
+          <div class="post-info">
+            <span class="post-cat">SO SÁNH</span>
+            <h3 class="post-title"><a href="BaiViet.html" class="stretched-link" style="color: inherit; text-decoration: none;">So sánh chậu inox và chậu đá granite – Nên chọn loại nào?</a></h3>
+            <p class="post-excerpt">Đặt lên bàn cân hai chất liệu phổ biến nhất hiện nay về độ bền, thẩm mỹ và giá
+              thành.</p>
+            <span class="post-date"><i class="fas fa-calendar-alt"></i> 8 Tháng 9, 2025</span>
+          </div>
+          </article>
+
+        <article class="article-card">
+          <div class="post-img-wrap">
+            <img src="../images/lapdatchau.png" alt="Lắp đặt chậu" style="object-fit: cover;" >
+          </div>
+          <div class="post-info">
+            <span class="post-cat">LẮP ĐẶT</span>
+            <h3 class="post-title"><a href="BaiViet.html" class="stretched-link" style="color: inherit; text-decoration: none;">Chậu âm, dương hay bán âm? Ưu nhược điểm từng loại</a></h3>
+            <p class="post-excerpt">So sánh chi tiết 3 kiểu lắp đặt phổ biến để chọn giải pháp phù hợp cho gian bếp.
+            </p>
+            <span class="post-date"><i class="fas fa-calendar-alt"></i> 5 Tháng 9, 2025</span>
+          </div>
+          </article>
+
+        <!-- Row 2: 2 bài -->
+        <article class="article-card">
+          <div class="post-img-wrap">
+            <img src="../images/ruachau.png" alt="Vệ sinh chậu" style="object-fit: cover;" >
+          </div>
+          <div class="post-info">
+            <span class="post-cat">VỆ SINH &amp; BẢO QUẢN</span>
+            <h3 class="post-title"><a href="BaiViet.html" class="stretched-link" style="color: inherit; text-decoration: none;">7 mẹo giúp chậu rửa bát luôn sạch đẹp</a></h3>
+            <p class="post-excerpt">Những thói quen nhỏ giúp chậu bền hơn, tránh ố vàng và hạn chế trầy xước.</p>
+            <span class="post-date"><i class="fas fa-calendar-alt"></i> 3 Tháng 9, 2025</span>
+          </div>
+          </article>
+
+        <article class="article-card">
+          <div class="post-img-wrap">
+            <img src="../images/dangmuachau.png" alt="Chậu workstation" style="object-fit: cover;" >
+          </div>
+          <div class="post-info">
+            <span class="post-cat">CHỌN CHẬU</span>
+            <h3 class="post-title"><a href="BaiViet.html" class="stretched-link" style="color: inherit; text-decoration: none;">Chậu workstation là gì? Có đáng mua không?</a></h3>
+            <p class="post-excerpt">Khám phá xu hướng chậu workstation – giải pháp thông minh cho gian bếp hiện đại.
+            </p>
+            <span class="post-date"><i class="fas fa-calendar-alt"></i> 28 Tháng 8, 2025</span>
+          </div>
+          </article>
+
+      </div><!-- end article-rows -->
+
+      <!-- PAGINATION -->
+      <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <span class="page-dots">...</span>
+        <button class="page-btn">10</button>
+        <button class="page-btn page-next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
+    </div><!-- end articles-column -->
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar-column">
+      <!-- CTA Card -->
+      <div class="sidebar-cta-card">
+        <div class="cta-card-icon"><i class="fas fa-book-open"></i></div>
+        <h3>Hướng dẫn chọn chậu dành riêng cho bạn</h3>
+        <p>Trả lời 5 câu hỏi, nhận gợi ý chậu phù hợp trong 1 phút.</p>
+        <a href="#" class="btn-accent-outline">Bắt đầu ngay <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Popular Posts -->
+      <div class="popular-posts">
+        <h3 class="sidebar-heading">Bài viết phổ biến</h3>
+        <ol class="popular-list">
+          <li>
+            <span class="pop-num">01</span>
+            <img class="pop-thumb" src="../images/kichthuoc.png" alt="Thumbnail" style="object-fit: cover;" >
+            <a href="#">Kích thước chậu rửa bát phổ biến hiện nay</a>
+          </li>
+          <li>
+            <span class="pop-num">02</span>
+            <img class="pop-thumb" src="../images/1or2.png" alt="Thumbnail" style="object-fit: cover;" >
+            <a href="#">Chậu 1 hố hay 2 hố? Nên chọn loại nào?</a>
+          </li>
+          <li>
+            <span class="pop-num">03</span>
+            <img class="pop-thumb" src="../images/inox304.png" alt="Thumbnail" style="object-fit: cover;" >
+            <a href="#">Chậu inox 304 là gì? Có thực sự tốt?</a>
+          </li>
+          <li>
+            <span class="pop-num">04</span>
+            <img class="pop-thumb" src="../images/chauda.png" alt="Thumbnail" style="object-fit: cover;" >
+            <a href="#">Thay chậu rửa bát có cần cắt lại đá không?</a>
+          </li>
+          <li>
+            <span class="pop-num">05</span>
+            <img class="pop-thumb" src="../images/vesinhchau.png" alt="Thumbnail" style="object-fit: cover;" >
+            <a href="#">Cách vệ sinh chậu rửa bát đúng cách, luôn như mới</a>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Email Subscribe -->
+      <div class="email-subscribe-box">
+        <div class="email-icon"><i class="fas fa-envelope"></i></div>
+        <h3>Nhận bài viết mới nhất qua email</h3>
+        <p>Không bỏ lỡ những tips hữu ích cho gian bếp của bạn.</p>
+        <div class="email-form">
+          <input type="email" placeholder="Nhập email của bạn" id="email-input">
+          <button type="button" id="email-submit"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </aside>
+
+  </main><!-- end container -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-col brand-col">
+          <a href="#" class="footer-logo-link">
+            <img src="../images/logo.png" alt="CRB" class="footer-logo-img">
+          </a>
+          <p class="brand-slogan">Đúng chậu - Đúng bếp</p>
+          <p class="footer-desc">CRB giúp bạn chọn đúng chậu, đúng bếp với giải pháp đơn giản, nhanh chóng và đáng tin
+            cậy.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Sản phẩm</h4>
+          <ul>
+            <li><a href="ChauRuaBat.html">Chậu rửa bát</a></li>
+            <li><a href="#">Vòi bếp</a></li>
+            <li><a href="#">Phụ kiện</a></li>
+            <li><a href="#">Combo ưu đãi</a></li>
+            <li><a href="#">Theo thương hiệu</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="#">Lắp đặt</a></li>
+            <li><a href="#">Bảo hành</a></li>
+            <li><a href="#">Đổi trả</a></li>
+            <li><a href="#">Thanh toán</a></li>
+            <li><a href="Lienhe.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Về CRB</h4>
+          <ul>
+            <li><a href="CRB.html">Giới thiệu</a></li>
+            <li><a href="GioiThieu.html">Showroom</a></li>
+          <li><a href="Lienhe.html">Liên hệ</a></li>
+            <li><a href="#">Dự án thực tế</a></li>
+            <li><a href="CamNang.html">Cẩm nang</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+          </ul>
+        </div>
+        <div class="footer-col contact-col">
+          <h4>Liên hệ</h4>
+          <ul>
+            <li><a href="tel:19001234" class="hotline-link"><i class="fas fa-phone-alt"></i> <a href="tel:19001234" class="contact-link" style="color: inherit; text-decoration: none; cursor: pointer;">1900 1234</a></a></li>
+            <li><a href="mailto:info@chauruabat.com"><i class="fas fa-envelope"></i> info@chauruabat.com</a></li>
+            <li><span class="address-text"><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 2,<br>TP. Thủ Đức,
+                TP. HCM</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 CRB. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Chính sách bảo mật</a>
+          <span class="separator">|</span>
+          <a href="#">Điều khoản sử dụng</a>
+          <span class="separator">|</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="../js/CamNang.js"></script>
+</body>
+
+</html>

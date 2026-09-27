@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRB - Chậu rửa bát</title>
     <!-- Đã đổi Giao Dien Trang Chu thành Giao Dien -->
-    <link rel="stylesheet" href="Giao-Dien/style.css">
+    <link rel="stylesheet" href="css/Giao-Dien.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -15,8 +15,8 @@
     <header class="header">
         <div class="container flex-between align-center">
             <div class="logo">
-                <a href="index.html">
-                    <img src="Giao-Dien/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
+                <a href="Web.html">
+                    <img src="images/logo.png"
                         alt="CRB Logo" class="img-logo">
                 </a>
             </div>
@@ -24,12 +24,13 @@
             <div class="mobile-menu-toggle" id="mobile-menu-toggle">☰</div>
 
             <nav class="nav-menu" id="nav-menu">
-                <a href="index.html">Chọn chậu <span style="font-size: 11px; margin-left: 3px;">&#709;</span></a>
+                <a href="Web.html">Chọn chậu <span style="font-size: 11px; margin-left: 3px;">&#709;</span></a>
                 <!-- Đã cập nhật link -->
-                <a href="ChauRuaBat/index.html">Chậu rửa bát</a>
-                <a href="Lienhe/index.html">Thay chậu cũ</a>
-                <a href="CamNang/index.html">Cẩm nang</a>
-                <a href="CRB/index.html">Showroom</a>
+                <a href="html/ChauRuaBat.html">Chậu rửa bát</a>
+                <a href="html/Lienhe.html">Thay chậu cũ</a>
+                <a href="html/CamNang.html">Cẩm nang</a>
+                <a href="html/GioiThieu.html">Showroom</a>
+                <a href="html/Lienhe.html">Liên hệ</a>
             </nav>
 
             <div class="header-action flex-center">
@@ -38,11 +39,11 @@
                         style="font-size: 20px; color: #0d3b45; margin-right: 8px; transform: scaleX(-1);"></i>
                     <div style="display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2;">
                         <span style="font-size: 13px; color: #555;">Hotline</span>
-                        <strong style="font-size: 15px; color: #0d3b45;">0961234567</strong>
+                        <strong style="font-size: 15px; color: #0d3b45;"><a href="tel:0961234567" class="contact-link" style="color: inherit; text-decoration: none; cursor: pointer;">0961234567</a></strong>
                     </div>
                 </div>
 
-                <button onclick="window.location.href='ChauRuaBat/index.html'" id="btn-tim-chau"
+                <button onclick="window.location.href='html/index.html'" id="btn-tim-chau"
                     class="btn btn-primary">TÌM CHẬU PHÙ HỢP ➔</button>
             </div>
         </div>
@@ -52,24 +53,25 @@
     <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
     <div class="mobile-drawer" id="mobile-drawer">
         <div class="drawer-header flex-between align-center">
-            <img src="Giao-Dien/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
+            <img src="images/logo.png"
                 alt="CRB Logo" style="max-height: 35px;">
             <div class="close-drawer" id="close-drawer">✖</div>
         </div>
         <div class="drawer-body">
-            <a href="index.html">Chọn chậu <span
+            <a href="Web.html">Chọn chậu <span
                     style="font-size: 11px; float:right; margin-top: 5px;">&#709;</span></a>
             <!-- Đã cập nhật link -->
-            <a href="ChauRuaBat/index.html">Chậu rửa bát</a>
-            <a href="Lienhe/index.html">Thay chậu cũ</a>
-            <a href="CamNang/index.html">Cẩm nang</a>
-            <a href="CRB/index.html">Showroom</a>
+            <a href="html/ChauRuaBat.html">Chậu rửa bát</a>
+            <a href="html/Lienhe.html">Thay chậu cũ</a>
+            <a href="html/CamNang.html">Cẩm nang</a>
+            <a href="html/GioiThieu.html">Showroom</a>
+                <a href="html/Lienhe.html">Liên hệ</a>
         </div>
         <div class="drawer-footer">
             <div class="hotline-drawer">
-                <i class="fa-solid fa-phone" style="transform: scaleX(-1);"></i> 0961234567
+                <i class="fa-solid fa-phone" style="transform: scaleX(-1);"></i> <a href="tel:0961234567" class="contact-link" style="color: inherit; text-decoration: none; cursor: pointer;">0961234567</a>
             </div>
-            <button onclick="window.location.href='ChauRuaBat/index.html'" id="btn-tim-chau-drawer"
+            <button onclick="window.location.href='html/index.html'" id="btn-tim-chau-drawer"
                 class="btn btn-primary"
                 style="width: 100%; text-align: center; justify-content: center; margin-top: 15px; font-weight: bold; font-size: 14px;">TÌM
                 CHẬU PHÙ HỢP ➔</button>
@@ -87,7 +89,7 @@
 
                 <div class="hero-buttons flex-row">
                     <button id="btn-bat-dau" class="btn btn-primary">BẮT ĐẦU CHỌN CHẬU ➔</button>
-                    <button onclick="window.location.href='Lienhe/index.html'" id="btn-thay-chau"
+                    <button onclick="window.location.href='html/Lienhe.html'" id="btn-thay-chau"
                         class="btn btn-outline bg-white">THAY CHẬU CŨ</button>
                 </div>
 
@@ -132,7 +134,7 @@
                         <div class="form-header" style="display: block; margin-bottom: 20px;">
                             <div class="title-row"
                                 style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
-                                <img src="Giao-Dien/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
+                                <img src="images/logo.png"
                                     alt="CRB Logo"
                                     style="height: 50px; width: auto; margin: 0; display: block; object-fit: contain; transform: translateY(2px);">
                                 <h3
@@ -231,16 +233,16 @@
                         <div class="ai-suggestion-imgs">
                             <div class="img-box">
                                 <span class="badge-dark">Trước</span>
-                                <a href="ChiTietSanPham/index.html"><img
+                                <a href="html/ChiTietSanPham.html"><img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUFyxHflXb5DP6IkUX-mRM8Isq6GGLWXchEQne34ZMQ&s=10"
-                                        alt="Bếp cũ"></a>
+                                        alt="Bếp cũ" style="object-fit: cover;" ></a>
                             </div>
                             <div class="arrow-down">↓</div>
                             <div class="img-box">
                                 <span class="badge-dark">Sau</span>
-                                <a href="ChiTietSanPham/index.html"><img
+                                <a href="html/ChiTietSanPham.html"><img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJy-4F2bDkJtlJdthSl4FT0KpX2QgJIFKBKIT2BkZq8A&s=10"
-                                        alt="Bếp mới"></a>
+                                        alt="Bếp mới" style="object-fit: cover;" ></a>
                             </div>
                         </div>
                         <div class="sidebar-signature">
@@ -260,15 +262,15 @@
                 <p>Chọn loại chậu phù hợp với không gian bếp của bạn</p>
             </div>
             <!-- Đã thêm link -->
-            <a href="ChauRuaBat/index.html" class="link">Xem tất cả danh mục ➔</a>
+            <a href="html/ChauRuaBat.html" class="link">Xem tất cả danh mục ➔</a>
         </div>
 
         <div class="row">
             <div class="col-3">
                 <div class="category-card">
-                    <a href="ChiTietSanPham/index.html"><img
+                    <a href="html/ChiTietSanPham.html"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUFyxHflXb5DP6IkUX-mRM8Isq6GGLWXchEQne34ZMQ&s=10"
-                            alt="Chậu 1 hố"></a>
+                            alt="Chậu 1 hố" style="object-fit: cover;" ></a>
                     <div class="flex-between align-center">
                         <div>
                             <h4>Chậu 1 hố</h4>
@@ -280,9 +282,9 @@
             </div>
             <div class="col-3">
                 <div class="category-card">
-                    <a href="ChiTietSanPham/index.html"><img
+                    <a href="html/ChiTietSanPham.html"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJy-4F2bDkJtlJdthSl4FT0KpX2QgJIFKBKIT2BkZq8A&s=10"
-                            alt="Chậu 2 hố"></a>
+                            alt="Chậu 2 hố" style="object-fit: cover;" ></a>
                     <div class="flex-between align-center">
                         <div>
                             <h4>Chậu 2 hố</h4>
@@ -294,9 +296,9 @@
             </div>
             <div class="col-3">
                 <div class="category-card">
-                    <a href="ChiTietSanPham/index.html"><img
+                    <a href="html/ChiTietSanPham.html"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZZJOah_-8vuOcqAD0ra7861AhZ2qi3l1lWrR-IC-uaQ&s=10"
-                            alt="Workstation"></a>
+                            alt="Workstation" style="object-fit: cover;" ></a>
                     <div class="flex-between align-center">
                         <div>
                             <h4>Workstation</h4>
@@ -308,9 +310,9 @@
             </div>
             <div class="col-3">
                 <!-- Đã thêm link -->
-                <a href="Lienhe/index.html" style="text-decoration: none; color: inherit;">
+                <a href="html/Lienhe.html" style="text-decoration: none; color: inherit;">
                     <div class="category-card">
-                        <img src="Giao-Dien/pngtree.png" alt="Thay chậu cũ">
+                        <img src="images/pngtree.png" alt="Thay chậu cũ" style="object-fit: cover;" >
                         <div class="flex-between align-center">
                             <div>
                                 <h4>Thay chậu cũ</h4>
@@ -332,18 +334,18 @@
                 <p>Được gợi ý bởi CRB FitMatch dựa trên nhu cầu của bạn</p>
             </div>
             <!-- Đã thêm link -->
-            <a href="ChauRuaBat/index.html" class="link">Xem tất cả sản phẩm ➔</a>
+            <a href="html/ChauRuaBat.html" class="link">Xem tất cả sản phẩm ➔</a>
         </div>
 
         <div class="row">
             <!-- Product 1 -->
             <div class="col-4 product-card">
-                <a href="ChiTietSanPham/index.html"><img
+                <a href="html/ChiTietSanPham.html"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi7dMgrR0idvSSZKCbeyA573gtKgJVa4vBxTHd0vP1Jg&s=10"
-                        alt="Hafele HS22-8040"></a>
+                        alt="Hafele HS22-8040" style="object-fit: cover;" ></a>
                 <div class="product-info">
                     <span class="brand">HAFELE</span>
-                    <h4><a href="ChiTietSanPham/index.html" style="color: inherit; text-decoration: none;">Chậu rửa bát
+                    <h4><a href="html/ChiTietSanPham.html" style="color: inherit; text-decoration: none;">Chậu rửa bát
                             Hafele HS22-8040</a></h4>
                     <div class="price">
                         <strong class="text-primary">4.990.000đ</strong>
@@ -355,7 +357,7 @@
                         <span class="spec-pill"><i class="fa-regular fa-circle-dot"></i> Lắp âm/lắp nổi</span>
                     </div>
                     <div class="product-actions flex-row">
-                        <button onclick="window.location.href='ChiTietSanPham/index.html'" class="btn btn-primary">Xem
+                        <button onclick="window.location.href='html/ChiTietSanPham.html'" class="btn btn-primary">Xem
                             chi tiết ➔</button>
                         <button class="btn btn-outline"><i class="fa-solid fa-cart-shopping"></i> Thêm vào giỏ
                             hàng</button>
@@ -365,12 +367,12 @@
 
             <!-- Product 2 -->
             <div class="col-4 product-card">
-                <a href="ChiTietSanPham/index.html"><img
+                <a href="html/ChiTietSanPham.html"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgGwl_DbQq_iUihb8qetYYLKUlzbD12i5W52bxCu1P7g&s=10"
-                        alt="Malloca MS 5813"></a>
+                        alt="Malloca MS 5813" style="object-fit: cover;" ></a>
                 <div class="product-info">
                     <span class="brand">MALLOCA</span>
-                    <h4><a href="ChiTietSanPham/index.html" style="color: inherit; text-decoration: none;">Chậu rửa bát
+                    <h4><a href="html/ChiTietSanPham.html" style="color: inherit; text-decoration: none;">Chậu rửa bát
                             Malloca MS 5813</a></h4>
                     <div class="price">
                         <strong class="text-primary">3.890.000đ</strong>
@@ -382,7 +384,7 @@
                         <span class="spec-pill"><i class="fa-regular fa-circle-dot"></i> Sâu lòng 220mm</span>
                     </div>
                     <div class="product-actions flex-row">
-                        <button onclick="window.location.href='ChiTietSanPham/index.html'" class="btn btn-primary">Xem
+                        <button onclick="window.location.href='html/ChiTietSanPham.html'" class="btn btn-primary">Xem
                             chi tiết ➔</button>
                         <button class="btn btn-outline"><i class="fa-solid fa-cart-shopping"></i> Thêm vào giỏ
                             hàng</button>
@@ -392,12 +394,12 @@
 
             <!-- Product 3 -->
             <div class="col-4 product-card">
-                <a href="ChiTietSanPham/index.html"><img
+                <a href="html/ChiTietSanPham.html"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0BIOL4WGAfW4wN98OjW5DkghnPa1Tt1KXQzXLYL662Q&s=10"
-                        alt="Konox KN8245SU"></a>
+                        alt="Konox KN8245SU" style="object-fit: cover;" ></a>
                 <div class="product-info">
                     <span class="brand">KONOX</span>
-                    <h4><a href="ChiTietSanPham/index.html" style="color: inherit; text-decoration: none;">Chậu rửa bát
+                    <h4><a href="html/ChiTietSanPham.html" style="color: inherit; text-decoration: none;">Chậu rửa bát
                             Konox KN8245SU</a></h4>
                     <div class="price">
                         <strong class="text-primary">4.750.000đ</strong>
@@ -409,7 +411,7 @@
                         <span class="spec-pill"><i class="fa-regular fa-circle-dot"></i> Sâu lòng 220mm</span>
                     </div>
                     <div class="product-actions flex-row">
-                        <button onclick="window.location.href='ChiTietSanPham/index.html'" class="btn btn-primary">Xem
+                        <button onclick="window.location.href='html/ChiTietSanPham.html'" class="btn btn-primary">Xem
                             chi tiết ➔</button>
                         <button class="btn btn-outline"><i class="fa-solid fa-cart-shopping"></i> Thêm vào giỏ
                             hàng</button>
@@ -427,7 +429,7 @@
                     <h2>Muốn thay chậu cũ nhưng sợ không vừa lỗ đá?</h2>
                     <p>Chỉ cần chụp ảnh, nhập kích thước (nếu có). CRB sẽ giúp bạn kiểm tra và gợi ý mẫu chậu phù hợp
                         nhanh chóng.</p>
-                    <button onclick="window.location.href='Lienhe/index.html'" id="btn-thu-ngay"
+                    <button onclick="window.location.href='html/Lienhe.html'" id="btn-thu-ngay"
                         class="btn btn-primary mt-2">THỬ NGAY VỚI ẢNH BẾP CỦA BẠN ➔</button>
                 </div>
                 <div class="col-8 banner-steps-container">
@@ -487,7 +489,7 @@
         <div class="brands-header flex-between align-center">
             <h3 class="brands-title">Thương hiệu uy tín. Được tin dùng tại Việt Nam.</h3>
             <!-- Đã thêm link -->
-            <a href="ChauRuaBat/index.html" class="link">Xem tất cả thương hiệu ➔</a>
+            <a href="html/ChauRuaBat.html" class="link">Xem tất cả thương hiệu ➔</a>
         </div>
         <div class="brands-list flex-between align-center">
             <div class="brand-logo" style="color: #555; font-weight: 800; font-size: 22px; letter-spacing: 1px;">H<span
@@ -515,13 +517,13 @@
             </div>
             <div class="cta-action flex-row align-center">
                 <!-- Đã thêm sự kiện chuyển hướng trang liên hệ -->
-                <button onclick="window.location.href='Lienhe/index.html'" class="btn btn-primary btn-lg">NHẬN TƯ VẤN
+                <button onclick="window.location.href='html/Lienhe.html'" class="btn btn-primary btn-lg">NHẬN TƯ VẤN
                     NGAY ➔</button>
                 <div class="hotline-white flex-row align-center">
                     <i class="fa-solid fa-phone phone-icon"></i>
                     <div class="hotline-info">
                         <span class="label">Hotline</span>
-                        <strong>0961 234 567</strong>
+                        <strong><a href="tel:0961234567" class="contact-link" style="color: inherit; text-decoration: none; cursor: pointer;">0961 234 567</a></strong>
                         <span class="time">Tư vấn 8:00 - 22:00 (Thứ 2 - CN)</span>
                     </div>
                 </div>
@@ -533,8 +535,8 @@
     <footer class="footer container section-padding">
         <div class="row">
             <div class="col-4 footer-col">
-                <a href="index.html">
-                    <img src="Giao-Dien/1789629695266_8460239123042280268_8460239123042280268_13d611da6de4e13d193c2ceb1c291da8-removebg-preview.png"
+                <a href="Web.html">
+                    <img src="images/logo.png"
                         alt="CRB Logo" class="img-logo-footer">
                 </a>
                 <p class="mt-2">Giải pháp chậu rửa bát toàn diện cho mọi căn bếp Việt.</p>
@@ -544,28 +546,29 @@
             <div class="col-2 footer-col">
                 <h4 class="footer-toggle">Sản phẩm <i class="fa-solid fa-chevron-down"></i></h4>
                 <ul>
-                    <li><a href="ChauRuaBat/index.html">Chậu rửa bát</a></li>
-                    <li><a href="ChauRuaBat/index.html">Phụ kiện</a></li>
-                    <li><a href="ChauRuaBat/index.html">Bộ xả - vòi rửa</a></li>
-                    <li><a href="ChauRuaBat/index.html">Tất cả sản phẩm</a></li>
+                    <li><a href="html/ChauRuaBat.html">Chậu rửa bát</a></li>
+                    <li><a href="html/ChauRuaBat.html">Phụ kiện</a></li>
+                    <li><a href="html/ChauRuaBat.html">Bộ xả - vòi rửa</a></li>
+                    <li><a href="html/ChauRuaBat.html">Tất cả sản phẩm</a></li>
                 </ul>
             </div>
             <div class="col-2 footer-col">
                 <h4 class="footer-toggle">Hỗ trợ <i class="fa-solid fa-chevron-down"></i></h4>
                 <ul>
-                    <li><a href="Lienhe/index.html">Thay chậu cũ</a></li>
-                    <li><a href="CamNang/index.html">Hướng dẫn chọn chậu</a></li>
-                    <li><a href="CRB/index.html">Chính sách bảo hành</a></li>
-                    <li><a href="CRB/index.html">Chính sách giao hàng</a></li>
+                    <li><a href="html/Lienhe.html">Thay chậu cũ</a></li>
+                    <li><a href="html/CamNang.html">Hướng dẫn chọn chậu</a></li>
+                    <li><a href="html/CRB.html">Chính sách bảo hành</a></li>
+                    <li><a href="html/CRB.html">Chính sách giao hàng</a></li>
                 </ul>
             </div>
             <div class="col-2 footer-col">
                 <h4 class="footer-toggle">Về CRB <i class="fa-solid fa-chevron-down"></i></h4>
                 <ul>
-                    <li><a href="CRB/index.html">Giới thiệu</a></li>
-                    <li><a href="CRB/index.html">Showroom</a></li>
-                    <li><a href="BaiViet/index.html">Tin tức</a></li>
-                    <li><a href="Lienhe/index.html">Liên hệ</a></li>
+                    <li><a href="html/CRB.html">Giới thiệu</a></li>
+                    <li><a href="html/GioiThieu.html">Showroom</a></li>
+                    <li><a href="html/Lienhe.html">Liên hệ</a></li>
+                    <li><a href="html/BaiViet.html">Tin tức</a></li>
+                    <li><a href="html/Lienhe.html">Liên hệ</a></li>
                 </ul>
             </div>
             <div class="col-2 footer-col">
@@ -579,7 +582,7 @@
             </div>
         </div>
     </footer>
-    <script src="Giao-Dien/script.js"></script>
+    <script src="js/Giao-Dien.js"></script>
 </body>
 
 </html>
