@@ -968,10 +968,7 @@ img {
   left: 0;
   z-index: 10;
 }
-.product-card .btn-detail, .product-card .btn-outline, .product-card .btn-wishlist {
-  position: relative;
-  z-index: 20;
-}
+
 /* Contact links hover state */
 .contact-link:hover {
   text-decoration: underline !important;

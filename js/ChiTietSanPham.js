@@ -246,25 +246,6 @@
 
     });
 });
-// --- LÀM TOÀN BỘ BOX CLICK ĐƯỢC (FULL BOX CLICK) ---
-document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.product-card, .article-card, .post-card');
-    cards.forEach(card => {
-        card.style.cursor = 'pointer';
-        card.addEventListener('click', (e) => {
-            // Không trigger nếu click vào các nút chức năng khác
-            if(e.target.closest('button') || e.target.closest('.btn-wishlist') || e.target.closest('.btn-outline')) return;
-            
-            // Tìm link chính
-            let link = card.tagName.toUpperCase() === 'A' ? card : (card.querySelector('a.btn-detail') || card.querySelector('a'));
-            if(link && link.href) {
-                // Tránh vòng lặp click nếu click trực tiếp vào thẻ a con
-                if(e.target.closest('a') === link && card.tagName.toUpperCase() !== 'A') return; 
-                window.location.href = link.href;
-            }
-        });
-    });
-});
 // --- LÀM CLICK ĐƯỢC TẤT CẢ SỐ ĐIỆN THOẠI VÀ EMAIL TRÊN TRANG ---
 document.addEventListener('DOMContentLoaded', () => {
     const phoneRegex = /(0961\s*234\s*567|1900\s*1234|1900\s*6666|0961234567)/g;
