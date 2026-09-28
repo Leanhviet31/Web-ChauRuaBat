@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     
     // 1. Mobile Menu Toggle
     const hamburger = document.getElementById('hamburger');
@@ -88,7 +88,7 @@
             item.classList.toggle('dropdown-open');
         });
 
-        // Handle logical change event (e.g., from 'Xóa tất cả' or clicking tags)
+        // Handle logical change event (e.g., from 'X�a t?t c?' or clicking tags)
         select.addEventListener('change', function() {
             updateFilterValueText(this);
             // Sync custom dropdown option states
@@ -161,7 +161,7 @@
         
         activeFiltersContainer.style.display = 'flex';
         
-        const labelHTML = '<span class="filter-label">Bộ lọc đang chọn:</span>';
+        const labelHTML = '<span class="filter-label">B? l?c �ang ch?n:</span>';
         let tagsHTML = '';
         
         activeSelects.forEach((select, index) => {
@@ -176,7 +176,7 @@
             `;
         });
         
-        const clearBtnHTML = '<a href="#" class="clear-filters" id="clear-filters">Xóa tất cả</a>';
+        const clearBtnHTML = '<a href="#" class="clear-filters" id="clear-filters">X�a t?t c?</a>';
         activeFiltersContainer.innerHTML = labelHTML + tagsHTML + clearBtnHTML;
         
         // Bind events to new remove buttons
@@ -258,12 +258,7 @@
             header.classList.remove('scrolled');
         }
     });
-});
-
-
-    });
-});
-// --- LÀM CLICK ĐƯỢC TẤT CẢ SỐ ĐIỆN THOẠI VÀ EMAIL TRÊN TRANG ---
+// --- L�M CLICK ��?C T?T C? S? �I?N THO?I V� EMAIL TR�N TRANG ---
 document.addEventListener('DOMContentLoaded', () => {
     const phoneRegex = /(0961\s*234\s*567|1900\s*1234|1900\s*6666|0961234567)/g;
     const emailRegex = /(info@crb\.vn)/gi;
@@ -307,8 +302,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     wrapTextNodes(document.body);
     
-    // Đảm bảo con trỏ thành bàn tay khi lướt qua số điện thoại/email
+    // �?m b?o con tr? th�nh b�n tay khi l�?t qua s? �i?n tho?i/email
     const style = document.createElement('style');
     style.innerHTML = '.auto-link:hover { opacity: 0.8; text-decoration: underline !important; cursor: pointer; }';
     document.head.appendChild(style);
 });
+});
+

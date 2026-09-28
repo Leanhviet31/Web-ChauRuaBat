@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -30,48 +30,50 @@
 
   <!-- HEADER (sticky) -->
   <header class="header" id="header">
-    <div class="container header-inner">
-      <a href="../index.html" class="logo">
-        <img src="../images/logo.png" alt="CRB" class="logo-img">
-      </a>
-      <nav class="nav-menu" id="nav-menu">
-        <ul>
-          <li><a href="ChauRuaBat.html">Chậu rửa bát</a></li>
-          <li><a href="Lienhe.html">Thay chậu cũ</a></li>
-          <li><a href="CamNang.html">Cẩm nang <span class="active-dot">●</span></a></li>
-          <li><a href="GioiThieu.html">Showroom</a></li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <div class="search-box">
-          <input type="text" placeholder="Bạn muốn tìm gì?">
-          <button><i class="fas fa-search"></i></button>
-        </div>
-        <div class="hotline"><i class="fas fa-phone"></i> <a href="tel:0961234567" class="contact-link"
-            style="color: inherit; text-decoration: none; cursor: pointer;">0961 234 567</a></div>
-        <a href="#" class="btn-cta">TÌM CHẬU PHÙ HỢP <i class="fas fa-arrow-right"></i></a>
-        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
-      </div>
-    </div>
-  </header>
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="CRB Logo" class="logo-img">
+                </a>
+            </div>
 
-  <!-- Mobile Nav -->
-  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
-    <div class="mobile-nav">
-      <div class="mobile-nav-header">
-        <img src="../images/logo.png" alt="CRB" style="height:36px;">
-        <button class="mobile-close" id="mobile-close"><i class="fas fa-xmark"></i></button>
-      </div>
-      <ul>
-        <li><a href="#">Chọn chậu</a></li>
-        <li><a href="#">Chậu rửa bát</a></li>
-        <li><a href="#">Thay chậu cũ</a></li>
-        <li><a href="#" class="active">Cẩm nang</a></li>
-        <li><a href="#">Showroom</a></li>
-      </ul>
-      <a href="#" class="btn-cta-mobile">Tìm chậu phù hợp</a>
-    </div>
-  </div>
+            <nav class="main-nav" id="main-nav">
+                <div class="mobile-nav-header mobile-only">
+                    <img src="../images/logo.png" alt="CRB" class="mobile-nav-logo">
+                    <button class="mobile-nav-close" id="mobile-nav-close"><i class="fas fa-times"></i></button>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../html/ChauRuaBat.html" class="nav-item">Chậu rửa bát</a></li>
+                    <li><a href="../html/Lienhe.html" class="nav-item">Thay chậu cũ</a></li>
+                    <li><a href="../html/CamNang.html" class="nav-item">Cẩm nang</a></li>
+                    <li><a href="../html/GioiThieu.html" class="nav-item">Showroom</a></li>
+                    <li><a href="../html/Lienhe.html" class="nav-item">Liên hệ</a></li>
+                </ul>
+                <div class="mobile-nav-footer mobile-only">
+                    <a href="tel:0961234567" class="mobile-hotline"><i class="fa-solid fa-phone"></i> 0961 234 567</a>
+                    <a href="../index.html" class="btn-mobile-consult">Thử chậu phù hợp</a>
+                </div>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="hotline">
+                    <i class="fa-solid fa-phone"></i>
+                    <span><a href="tel:0961234567" class="contact-link">0961 234 567</a></span>
+                </div>
+                <a href="../index.html" class="btn-try-fit">TÌM CHẬU PHÙ HỢP ➔</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="menu-overlay" id="menu-overlay"></div>
+    </header>
+
 
   <!-- READING PROGRESS BAR -->
   <div class="reading-progress" id="reading-progress"></div>
@@ -678,6 +680,7 @@
   <button class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></button>
 
   <script src="../js/BaiViet.js"></script>
+  <script src="../js/Giao-Dien.js" defer></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-﻿// Tính năng toggle menu cho màn hình mobile
+// Tính năng toggle menu cho màn hình mobile
 document.addEventListener("DOMContentLoaded", function () {
 
     // --- CODE CUỘN TRANG CHO 2 NÚT ---
@@ -172,11 +172,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-
-});
-
-    });
-});
 // --- LÀM CLICK ĐƯỢC TẤT CẢ SỐ ĐIỆN THOẠI VÀ EMAIL TRÊN TRANG ---
 document.addEventListener('DOMContentLoaded', () => {
     const phoneRegex = /(0961\s*234\s*567|1900\s*1234|1900\s*6666|0961234567)/g;
@@ -225,4 +220,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const style = document.createElement('style');
     style.innerHTML = '.auto-link:hover { opacity: 0.8; text-decoration: underline !important; cursor: pointer; }';
     document.head.appendChild(style);
+});
+});
+
+// ==============================================================
+// STANDARDIZED MOBILE MENU LOGIC
+// ==============================================================
+document.addEventListener('DOMContentLoaded', function() {
+    // Cập nhật lại tên class dưới đây cho khớp chính xác 100% với HTML
+    const hamburgerBtn = document.querySelector('.mobile-menu-btn'); 
+    const mobileSidebar = document.querySelector('.main-nav'); 
+    const menuOverlay = document.getElementById('menu-overlay');
+    const mobileNavClose = document.getElementById('mobile-nav-close');
+    
+    if (hamburgerBtn && mobileSidebar) {
+        hamburgerBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            mobileSidebar.classList.toggle('menu-active');
+            if (menuOverlay) menuOverlay.classList.toggle('menu-active');
+        });
+    }
+
+    if (mobileNavClose && mobileSidebar) {
+        mobileNavClose.addEventListener('click', function(e) {
+            e.preventDefault();
+            mobileSidebar.classList.remove('menu-active');
+            if (menuOverlay) menuOverlay.classList.remove('menu-active');
+        });
+    }
+
+    if (menuOverlay && mobileSidebar) {
+        menuOverlay.addEventListener('click', function() {
+            mobileSidebar.classList.remove('menu-active');
+            menuOverlay.classList.remove('menu-active');
+        });
+    }
 });

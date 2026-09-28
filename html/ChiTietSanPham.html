@@ -18,32 +18,29 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container header-inner">
             <div class="logo">
-                <a href="../index.html"><img src="../images/logo.png" alt="CRB - Đúng Chậu Đúng Bếp"
-                        class="logo-img"></a>
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="CRB Logo" class="logo-img">
+                </a>
             </div>
 
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-
-            <nav class="main-nav">
+            <nav class="main-nav" id="main-nav">
                 <div class="mobile-nav-header mobile-only">
                     <img src="../images/logo.png" alt="CRB" class="mobile-nav-logo">
-                    <button class="mobile-nav-close"><i class="fas fa-times"></i></button>
+                    <button class="mobile-nav-close" id="mobile-nav-close"><i class="fas fa-times"></i></button>
                 </div>
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-item">Chậu rửa bát <i class="fas fa-chevron-down"></i></a>
-                    </li>
-                    <li><a href="Lienhe.html" class="nav-item">Thay chậu cũ</a></li>
-                    <li><a href="CamNang.html" class="nav-item">Cẩm nang</a></li>
-                    <li><a href="GioiThieu.html" class="nav-item">Showroom</a></li>`r`n <li><a href="Lienhe.html"
-                            class="nav-item">Liên hệ</a></li>
+                    <li><a href="../html/ChauRuaBat.html" class="nav-item">Chậu rửa bát</a></li>
+                    <li><a href="../html/Lienhe.html" class="nav-item">Thay chậu cũ</a></li>
+                    <li><a href="../html/CamNang.html" class="nav-item">Cẩm nang</a></li>
+                    <li><a href="../html/GioiThieu.html" class="nav-item">Showroom</a></li>
+                    <li><a href="../html/Lienhe.html" class="nav-item">Liên hệ</a></li>
                 </ul>
                 <div class="mobile-nav-footer mobile-only">
-                    <a href="#" class="btn-mobile-consult">Thử chậu phù hợp</a>
+                    <a href="tel:0961234567" class="mobile-hotline"><i class="fa-solid fa-phone"></i> 0961 234 567</a>
+                    <a href="../index.html" class="btn-mobile-consult">Thử chậu phù hợp</a>
                 </div>
             </nav>
 
@@ -52,11 +49,18 @@
                     <input type="text" placeholder="Tìm kiếm...">
                     <button><i class="fas fa-search"></i></button>
                 </div>
-                <a href="#" class="hotline"><i class="fas fa-phone-alt"></i> <a href="tel:19006666" class="contact-link"
-                        style="color: inherit; text-decoration: none; cursor: pointer;">1900 6666</a></a>
-                <a href="#" class="btn-try-fit">THỬ CHẬU PHÙ HỢP</a>
+                <div class="hotline">
+                    <i class="fa-solid fa-phone"></i>
+                    <span><a href="tel:0961234567" class="contact-link">0961 234 567</a></span>
+                </div>
+                <a href="../index.html" class="btn-try-fit">TÌM CHẬU PHÙ HỢP ➔</a>
             </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
+        <div class="menu-overlay" id="menu-overlay"></div>
     </header>
 
     <div class="container container-main">

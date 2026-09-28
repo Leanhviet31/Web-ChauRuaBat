@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
 
   // 1. Reading Progress Bar
   const progressBar = document.getElementById('reading-progress');
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         globalImageUpload.addEventListener('change', (e) => {
             if (e.target.files && e.target.files.length > 0) {
-                alert('Đã chọn file: ' + e.target.files[0].name + '. Logic xử lý ảnh tiếp theo sẽ ở đây.');
+                alert('�? ch?n file: ' + e.target.files[0].name + '. Logic x? l? ?nh ti?p theo s? ? ��y.');
             }
         });
     }
@@ -150,11 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
-
-    });
-});
-// --- LÀM CLICK ĐƯỢC TẤT CẢ SỐ ĐIỆN THOẠI VÀ EMAIL TRÊN TRANG ---
+// --- L�M CLICK ��?C T?T C? S? �I?N THO?I V� EMAIL TR�N TRANG ---
 document.addEventListener('DOMContentLoaded', () => {
     const phoneRegex = /(0961\s*234\s*567|1900\s*1234|1900\s*6666|0961234567)/g;
     const emailRegex = /(info@crb\.vn)/gi;
@@ -198,8 +194,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     wrapTextNodes(document.body);
     
-    // Đảm bảo con trỏ thành bàn tay khi lướt qua số điện thoại/email
+    // �?m b?o con tr? th�nh b�n tay khi l�?t qua s? �i?n tho?i/email
     const style = document.createElement('style');
     style.innerHTML = '.auto-link:hover { opacity: 0.8; text-decoration: underline !important; cursor: pointer; }';
     document.head.appendChild(style);
 });
+});
+

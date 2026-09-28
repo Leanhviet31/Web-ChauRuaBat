@@ -44,10 +44,6 @@
         backToTopBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
     }
 });
-
-
-    });
-});
 // --- LÀM CLICK ĐƯỢC TẤT CẢ SỐ ĐIỆN THOẠI VÀ EMAIL TRÊN TRANG ---
 document.addEventListener('DOMContentLoaded', () => {
     const phoneRegex = /(0961\s*234\s*567|1900\s*1234|1900\s*6666|0961234567)/g;
@@ -96,4 +92,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const style = document.createElement('style');
     style.innerHTML = '.auto-link:hover { opacity: 0.8; text-decoration: underline !important; cursor: pointer; }';
     document.head.appendChild(style);
+});
+// ==============================================================
+// STANDARDIZED MOBILE MENU LOGIC (ADDED BY AI)
+// ==============================================================
+document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mainNav = document.getElementById('main-nav');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const mobileNavClose = document.getElementById('mobile-nav-close');
+
+    function toggleMenu() {
+        if (mainNav) mainNav.classList.toggle('menu-active');
+        if (menuOverlay) menuOverlay.classList.toggle('menu-active');
+    }
+
+    function closeMenu() {
+        if (mainNav) mainNav.classList.remove('menu-active');
+        if (menuOverlay) menuOverlay.classList.remove('menu-active');
+    }
+
+    if (mobileMenuBtn) {
+        // Remove old listeners by replacing node
+        const newBtn = mobileMenuBtn.cloneNode(true);
+        mobileMenuBtn.parentNode.replaceChild(newBtn, mobileMenuBtn);
+        newBtn.addEventListener('click', toggleMenu);
+    }
+    
+    if (mobileNavClose) {
+        const newCloseBtn = mobileNavClose.cloneNode(true);
+        mobileNavClose.parentNode.replaceChild(newCloseBtn, mobileNavClose);
+        newCloseBtn.addEventListener('click', closeMenu);
+    }
+    
+    if (menuOverlay) {
+        menuOverlay.addEventListener('click', closeMenu);
+    }
 });
