@@ -1213,7 +1213,7 @@ ol {
   background: var(--accent);
 }
 
-.footer-col h4 {
+.footer-col .footer-title {
   font-size: 15px;
   font-weight: 600;
   color: var(--white);

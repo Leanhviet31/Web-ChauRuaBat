@@ -1143,7 +1143,7 @@ a {
     margin: 5px 0;
 }
 
-.footer-col h4 {
+.footer-col .footer-title {
     font-size: 15px;
     font-weight: bold;
     color: #222;

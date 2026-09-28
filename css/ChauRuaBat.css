@@ -1142,7 +1142,7 @@ img {
   color: #a0aec0;
 }
 
-.footer-col h4 {
+.footer-col .footer-title {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 16px;

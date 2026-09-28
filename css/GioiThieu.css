@@ -600,12 +600,12 @@ img {
     color: white;
 }
 
-.footer-col h4 {
+.footer-col .footer-title {
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
-.footer-col h4 i {
+.footer-col .footer-title i {
     display: none;
 }
 
