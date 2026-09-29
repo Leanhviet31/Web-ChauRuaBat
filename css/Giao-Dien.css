@@ -1933,3 +1933,22 @@ a {
 .nav-item:hover, .nav-item.active {
     color: #ff6a00;
 }
+
+/* --- Hero Banner Title (index.html) --- */
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    font-weight: 700;
+    color: #0d3b44;
+    line-height: 1.2;
+}
+
+/* Hide on Mobile helper */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 36px; /* Giảm size chữ cho mobile */
+    }
+    .desktop-only {
+        display: none !important; /* Ẩn thẻ <br> trên mobile để chữ tự động rớt dòng */
+    }
+}
