@@ -1,4 +1,4 @@
-﻿/* 1. CSS Variables & Reset */
+/* 1. CSS Variables & Reset */
 :root {
   --primary: #1B5B6E;
   /* Dark teal - màu chủ đạo CRB */
@@ -320,96 +320,111 @@ img {
 }
 
 .page-hero {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 45%, rgba(255,255,255,0) 75%), url('../images/hero-bg.png');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.page-hero-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  padding: 24px 0 40px 0;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .hero-left {
   flex: 1;
+  max-width: 65%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-width: 300px;
-  max-width: 700px;
+  gap: 12px;
 }
 
 .hero-left h1 {
-  font-size: 56px;
-  font-weight: 900;
-  color: var(--primary-dark);
-  margin-bottom: 16px;
-  letter-spacing: -1px;
+  font-size: 48px;
+  font-weight: 800;
+  color: #0d3b45;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .hero-left h1 {
+    font-size: 32px;
+  }
 }
 
 .hero-left p {
-  color: var(--text-gray);
-  line-height: 1.6;
-  font-size: 17px;
-  margin-bottom: 32px;
+  font-size: 16px;
+  color: #4a5568;
   max-width: 90%;
 }
 
 .hero-badges {
   display: flex;
+  gap: 28px;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
+  margin-top: 24px;
 }
 
 .badge {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .icon-circle {
   width: 44px;
   height: 44px;
-  background-color: #eaf1f3;
+  background-color: #0d3b45;
+  color: #ffffff;
   border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  font-size: 18px;
   flex-shrink: 0;
 }
 
 .icon-circle i {
-  color: var(--primary);
+  color: #ffffff;
   font-size: 18px;
 }
 
 .badge-text {
   display: flex;
   flex-direction: column;
-  gap: 2px;
 }
 
 .badge-text strong {
-  font-size: 15px;
   font-weight: 700;
-  color: var(--primary-dark);
+  color: #0d3b45;
+  font-size: 14px;
 }
 
 .badge-text span {
-  font-size: 13px;
-  color: var(--text-gray);
-  font-weight: 400;
+  color: #6b7280;
+  font-size: 12px;
 }
 
 .hero-right {
-  flex: 0 0 380px;
+  width: 100%;
+  max-width: 350px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 28px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background: var(--white);
-  color: var(--text-dark);
-  padding: 36px 32px;
-  border-radius: 12px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  gap: 16px;
 }
 
 .fitmatch-box h2 {
@@ -440,19 +455,19 @@ img {
 }
 
 .btn-fitmatch {
-  display: block;
-  background: var(--accent);
-  color: var(--white);
-  padding: 16px 28px;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 16px;
+  background-color: #ff6a00;
+  color: #ffffff;
+  width: 100%;
   text-align: center;
-  transition: all 0.3s ease;
+  padding: 14px 0;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
   border: none;
-  cursor: pointer;
+  display: block;
   text-decoration: none;
-  box-shadow: 0 6px 16px rgba(232, 113, 26, 0.25);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn-fitmatch:hover {
